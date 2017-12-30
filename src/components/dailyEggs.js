@@ -1,23 +1,23 @@
 import React from 'react'
 
-class Age extends React.Component {
+class DailyEggs extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = {age: ''}
+		this.state = {dailyEggs: ''}
 
 		this.onInputChange = this.onInputChange.bind(this);
 	}
 
-	onInputChange(age) {
-		this.setState({ age: age })
-		this.props.onAgeChange(age)
+	onInputChange(eggs) {
+		this.setState({ eggs: eggs })
+		this.props.onEggsChange(eggs)
 	}
 
 	render() {
 		return (
 			<div>
 				<label>
-					<stat>Age</stat>
+					<stat>DailyEggs</stat>
 					<input onChange={event => this.onInputChange(event.target.value)} type="text" name="age" />
 				</label>
 			</div>
@@ -25,4 +25,4 @@ class Age extends React.Component {
 	}
 }
 
-export default Age
+export default DailyEggs

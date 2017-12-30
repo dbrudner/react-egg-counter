@@ -1,0 +1,14 @@
+.eggStats {
+	margin: 50px;
+	border: black solid 2px;
+	padding: 30px;
+	font-size: 24px;
+}
+
+label {
+	padding: 10px;
+}
+
+stat, span {
+	padding: 10px;
+}
