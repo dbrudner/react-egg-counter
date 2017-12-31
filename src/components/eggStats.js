@@ -1,4 +1,5 @@
 import React from 'react'
+import LifeExpectancy from './lifeExpectancy'
 
 class EggStats extends React.Component {
 	
@@ -12,6 +13,7 @@ class EggStats extends React.Component {
 	render() {
 		return (
 
+
 			<div className='eggStats'>
 				<div>
 					<strong>Age:</strong> {this.props.age}
@@ -23,8 +25,7 @@ class EggStats extends React.Component {
 					<strong>Eggs:</strong> {this.props.eggs}
 				</div>
 				<div>
-					<strong>Life Expectancy: </strong> 
-					
+					<LifeExpectancy gender={this.props.gender} age={this.props.age} eggs={this.props.eggs}/>
 				</div>
 			</div>
 		)

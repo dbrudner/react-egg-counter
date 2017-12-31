@@ -13,7 +13,7 @@ export default class App extends Component {
 		this.state = { 
 			age: '25',
 			eggs: '2',
-			gender: 'Female'
+			gender: 'Male'
 		};
 	}
 

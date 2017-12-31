@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class Gender extends Component {
 	constructor(props) {
 		super(props);
@@ -16,13 +17,15 @@ class Gender extends Component {
 	render() {
 		return (
 			<div>
-				<label>
-					<stat>Gender</stat>
-					<select onChange={event => this.onInputChange(event.target.value)}>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
-					</select>
-				</label>
+				<div>
+					<label>
+						<stat>Gender</stat>
+						<select onChange={event => this.onInputChange(event.target.value)}>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+					</label>
+				</div>
 			</div>
 		)
 	}
